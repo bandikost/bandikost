@@ -1,0 +1,29 @@
+.Header {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    background-color: rgb(122, 179, 117);
+    align-items: center;
+   width: 100%;
+   z-index: 10;
+}
+
+.Headerinner {
+    width: 500px;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.NavBar {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavBar li {
+    list-style: none;
+    color: rgb(23, 92, 12);
+    font-size: 22px;
+}
+
