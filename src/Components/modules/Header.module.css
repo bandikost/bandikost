@@ -1,8 +1,10 @@
+
+
 .Header {
     position: fixed;
     display: flex;
     height: 60px;
-    background-color: rgb(122, 179, 117);
+    background: #222222;
     align-items: center;
    width: 100%;
    z-index: 10;
@@ -16,14 +18,15 @@
 }
 
 .NavBar {
-    width: 300px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
 }
 
 .NavBar li {
     list-style: none;
-    color: rgb(23, 92, 12);
+    color: white;
+    font-family: "Ubuntu";
     font-size: 22px;
 }
 

@@ -1,19 +1,20 @@
+p {
+  margin: 0;
+}
+
 .parallax {
-    background-image: url('../images/parallax.jpg');
+    background-color: #222222;
     height: 80vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
-    text-align: center;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
   }
   
   section {
-    height: 1200px;
+    height: 800px;
     background-color: rgb(157, 224, 168);
     background-position: center;
     background-repeat: no-repeat;
@@ -23,26 +24,41 @@
     background-attachment: fixed;
   }
 
+.title {
+  max-width: 990px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.title p {
+  font-family: "Ubuntu";
+  line-height: 1.3em;
+}
+
+.title p:nth-child(3) {
+  font-size: 13px;
+}
 
 
-.Sector_second {
+.sectorSecond {
     display: flex;
     flex-direction: column;
     align-items: center;
   
 }
 
-  .Sector_second p{
+  .sectorSecond p{
     width: 500px;
     margin-top: -40px;
-    height: 50px;
+    height: 100px;
     color: white;
-    font-size: 22px;
+    font-size: 24px;
   }
 
-  .container_Works {
+  .containerWorks {
     display: flex;
     justify-content: center;
+
 }
 
 .NumberOfWork {
@@ -54,6 +70,7 @@
     gap: 70px; 
     list-style: none; 
     padding: 0;
+    margin-top: 70px;
 }
 
 .NumberOfWork a {
@@ -118,7 +135,7 @@
   }
   
   .cardBack {
-    background: #333;
+    background-color: #333;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -129,3 +146,110 @@
     text-align: center;
     padding: 10px;
   }
+
+
+.sectionWorks {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  top: 100px;
+}
+
+.sectionWorks h1 {
+  margin-left: 100px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.leftSide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.leftSside a {
+  margin-top: 20px;
+  color:  rgb(23, 68, 19);
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+
+.rightSide a {
+  margin-top: 20px;
+  color:  rgb(23, 68, 19);
+}
+
+
+.description {
+  padding-bottom: 20px;
+  width: 330px;
+  color: rgb(5, 29, 2);
+  font-size: 22px;
+}
+
+.forwho {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500; 
+  
+}
+
+.tematics {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+.service {
+  font-size: 18px;
+  font-weight: 500; 
+  padding-bottom: 20px;
+  
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    color:  rgb(23, 68, 19);
+      
+}
+
+.options p {
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.projectedDis {
+  margin-top: 20px;
+  color: rgb(23, 92, 12);
+}
+
+.cost {
+  color: rgb(5, 29, 2);
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+
+.Description {
+  height: 100vh;
+  background-color: rgb(157, 224, 168);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+}

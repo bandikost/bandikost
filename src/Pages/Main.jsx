@@ -35,42 +35,44 @@ useEffect(() => {
 
     return (
         <>
-            <Header />
-            <div>
-                <header className={s.parallax}>
-                    <h1>Добро пожаловать на мой личный сайт!</h1>
-                </header>
-                <section className={s.Second_section}>
-                    <div className={s.Sector_second}>
-                        <p>Здесь расположены мои проекты.</p>
-                        <p>Некоторые уже готовы, другие в разработке.</p>
+            <Header />   
+                <section className={s.parallax}>
+                    <div className={s.title}>
+                        <h1>Добро пожаловать на мой личный сайт!</h1>
+                        <p>Здесь находятся мои проекты, которые либо уже были выполнены, либо которые еще в разработке.</p>
+                        <p><sup>* </sup>Сайт переодически обновляется, поэтому не пугайтесь если что-то вы увидите обо мне новое.</p>
+                    </div>
+                </section>
+                <section className={s.secondSection}>
+                    <div className={s.sectorSecond}>
+                        <p>Здесь расположены мои проекты.
+                        Некоторые уже готовы, другие в разработке.</p>
                     </div> 
-                    <div className={s.container_Works}>
+                    <main className={s.containerWorks}>
                         <ul className={s.NumberOfWork}>
                             {projects.map((project) => (
                                 <li key={project.id}>
                                     <NavLink to={`/work/${project.id}`}>
-                                        <div className={s.card}>
+                                        <article className={s.card}>
                                             <div className={s.cardInner}>
                                                 <div className={s.cardFront}>
-                                                    <img src={project.img} alt={`Проект ${project.id}`} />
+                                                    <img src={project.img} loading="lazy" alt={`Проект ${project.id}`} />
                                                 </div>
                                                 <div className={s.cardBack}>
                                                     {project.text}
                                                 </div>
                                             </div>
-                                        </div>
+                                        </article>
                                     </NavLink>
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </main>
                 </section>
                 <section className={s.parallax}>
                     <p>Some content here...</p>
                     <p>Scroll down to see the effect!</p>
-                </section>
-            </div>
+                </section>     
         </>
     );
 };
