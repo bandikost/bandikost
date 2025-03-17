@@ -3,6 +3,8 @@ import s from './modules/Main.module.css';
 import Header from "../Components/Header";
 import { NavLink } from "react-router-dom";
 import renanao from "./images/renanao/cover.JPG";
+import SoloRiver from "../Images/Main/SoloRiver.jpg"
+import LastSeenTracker from "../Components/LastSeenTracker";
 
 const projects = [
     { id: 1, img: renanao, text: "Проект 1: Renanao" },
@@ -37,11 +39,15 @@ useEffect(() => {
         <>
             <Header />   
                 <section className={s.parallax}>
-                    <div className={s.title}>
-                        <h1>Добро пожаловать на мой личный сайт!</h1>
-                        <p>Здесь находятся мои проекты, которые либо уже были выполнены, либо которые еще в разработке.</p>
-                        <p><sup>* </sup>Сайт переодически обновляется, поэтому не пугайтесь если что-то вы увидите обо мне новое.</p>
-                    </div>
+                    <span className={s.welcomeSection}>                 
+                        <div className={s.title}>
+                            <h1>Добро пожаловать на мой личный сайт!</h1>
+                            <LastSeenTracker />
+                            <p>Здесь находятся мои проекты, которые либо уже были выполнены, либо которые еще в разработке.</p>
+                            <p><sup>* </sup>Сайт переодически обновляется, поэтому не пугайтесь если что-то вы увидите обо мне новое.</p>
+                        </div>
+                        <img src={SoloRiver} loading="lazy" alt="My archive" />
+                    </span>              
                 </section>
                 <section className={s.secondSection}>
                     <div className={s.sectorSecond}>

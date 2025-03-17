@@ -11,14 +11,13 @@
 }
 
 .Headerinner {
-    width: 500px;
     justify-content: center;
     display: flex;
-   
+    margin: 0 auto 0;
 }
 
 .NavBar {
-    width: 280px;
+    width: 330px;
     display: flex;
     justify-content: space-between;
 }
@@ -30,3 +29,11 @@
     font-size: 22px;
 }
 
+.NavBar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar li a:hover{
+    text-decoration: underline;  
+}

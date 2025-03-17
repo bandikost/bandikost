@@ -10,7 +10,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    align-items: flex-start;
   }
   
   section {
@@ -22,17 +22,38 @@ p {
     padding: 100px;
     text-align: center;
     background-attachment: fixed;
+   
   }
+
+.welcomeSection {
+  display: flex;
+  width: 990px;
+  margin-top: 100px;
+}
+
+.welcomeSection img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.4);
+}
 
 .title {
   max-width: 990px;
   width: 100%;
   font-size: 20px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title p {
   font-family: "Ubuntu";
   line-height: 1.3em;
+  text-align: left;
 }
 
 .title p:nth-child(3) {
