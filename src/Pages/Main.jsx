@@ -38,14 +38,15 @@ useEffect(() => {
         <>
             <Header />   
                 <section className={s.parallax}>
-                    <span className={s.welcomeSection}>                 
+                    <div className={s.welcomeSection}>                 
                         <div className={s.title}>
-                            <h1>Добро пожаловать на мой личный сайт!</h1>
-                            <p>Здесь находятся мои проекты, которые либо уже были выполнены, либо которые еще в разработке.</p>
+                            <h1>Добро пожаловать ко мне в гости!</h1>
+                            <p> Здесь вы сможете узнать информацию обо мне как о человеке, специалисте и, <span style={{textDecoration: "underline"}}>возможно</span>, вашем будущем коллеге.</p>
+                            <p> А также во всех деталях увидеть мои коммерческие проекты и те, которые я создавал для улучшения своих навыков.</p>
                             <p><sup>* </sup>Сайт переодически обновляется, поэтому не пугайтесь если что-то вы увидите обо мне новое.</p>
                         </div>
                         <img src={SoloRiver} loading="lazy" alt="My archive" />
-                    </span>              
+                    </div>              
                 </section>
                 <section className={s.secondSection}>
                     <div className={s.sectorSecond}>

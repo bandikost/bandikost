@@ -66,7 +66,7 @@ const PortfolioPage = () => {
       <Header />
       <section className={s.Description}>
         <div className={s.containerWorks}>
-          <span className={s.sectionWorks}>
+          <div className={s.sectionWorks}>
             <div className={s.leftSide}>
               <h2>Проект под номером {id}</h2>
               {img && <img src={img} loading='lazy' alt={`Проект ${id}`} />}
@@ -87,7 +87,7 @@ const PortfolioPage = () => {
               </div>
               <time className={s.cost}>Стоимость: {cost}</time>
             </div>
-          </span>
+          </div>
         </div>
       </section> 
     </>
