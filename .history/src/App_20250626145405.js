@@ -4,7 +4,6 @@ import './App.css';
 import Main from "./Pages/Main";
 import PortfolioPage from "./Pages/PortfolioPage";
 import Films from "./Pages/Films";
-import CategoryFilms from "./Pages/CategoryFilms";
 
 
 const App = () =>  {
@@ -17,7 +16,7 @@ const App = () =>  {
         <Route path="/main" element={<Main />}/> 
         <Route path="/films" element={<Films />}/> 
         <Route path="/work/:id" element={<PortfolioPage />}/> 
-        <Route path="/category/:id" element={<CategoryFilms />}/> 
+        <Route path="/work/:id" element={<PortfolioPage />}/> 
       </Routes>
     </BrowserRouter>
  

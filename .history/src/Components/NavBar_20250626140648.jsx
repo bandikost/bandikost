@@ -8,7 +8,7 @@ const NavBar = () => {
     <ul className={s.NavBar}>
       <li>Главная</li>
       <li><NavLink to="/about">Обо мне</NavLink></li>
-      <li><NavLink to="/films">Фильмы</NavLink></li>
+      <li>Страница</li>
     </ul>
   );
 };
