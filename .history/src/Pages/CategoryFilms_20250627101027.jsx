@@ -12,7 +12,7 @@ export default function CategoryFilms() {
 
     useEffect(() => {
         axios
-        .get(`/api/films?categoryId=${id}`)
+        .get(`/api/films?categoty=${id}`)
         .then((res) => setFilms(res.data))
         .catch((err) => console.log(`Ошибка, фильм не найден`, err))
     }, [id])
