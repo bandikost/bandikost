@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router";
 import './App.css';
+import Main from "./Pages/Main";
 import PortfolioPage from "./Pages/PortfolioPage";
 import Films from "./Pages/Films";
 import CategoryFilms from "./Pages/CategoryFilms";
