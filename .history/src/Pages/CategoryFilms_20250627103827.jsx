@@ -27,7 +27,6 @@ export default function CategoryFilms() {
 
         try {
             const res = await axios.post("/api/addFilm", newFilm);
-            console.log("Ответ от сервера:", res.data);
             setFilms((prev) => [...prev, res.data]);
             inputRef.current.value = "";
         } catch (err) {
