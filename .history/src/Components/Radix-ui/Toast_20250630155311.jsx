@@ -27,7 +27,7 @@ export default function MyToast() {
     <Toast.Provider swipeDirection="right">
 
       <Toast.Root duration={10000} open={open} onOpenChange={setOpen} className="bg-indigo-400 text-white p-4 rounded shadow">
-        <Toast.Title className="font-bold w-64 sm:w-72 h-8">Последнее обновление фильма:</Toast.Title>
+        <Toast.Title className="font-bold w-64 sm:w072 h-8">Последнее обновление фильма:</Toast.Title>
         <Toast.Description className="center-flex underline">{formattedDate}</Toast.Description>
          <Toast.Close asChild><button
         aria-label="Закрыть"
