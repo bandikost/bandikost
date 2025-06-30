@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center-flex {
+  @apply flex justify-center items-center;
+}
+
+.text-size {
+  @apply text-sm sm:text-lg md:text-2xl
+}

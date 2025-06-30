@@ -1,0 +1,39 @@
+
+
+.Header {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    background: #222222;
+    align-items: center;
+   width: 100%;
+   z-index: 10;
+}
+
+.Headerinner {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto 0;
+}
+
+.NavBar {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavBar li {
+    list-style: none;
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 22px;
+}
+
+.NavBar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar li a:hover{
+    text-decoration: underline;  
+}
