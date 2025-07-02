@@ -1,0 +1,284 @@
+p {
+  margin: 0;
+}
+
+.parallax {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    background-attachment: fixed;
+   
+  }
+
+.welcomeSection {
+  display: flex;
+  width: 990px;
+  margin-top: 100px;
+}
+
+.welcomeSection img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  max-width: 990px;
+  width: 100%;
+  font-size: 20px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title p {
+  font-family: "Ubuntu";
+  line-height: 1.3em;
+  text-align: left;
+  padding: 10px;
+}
+
+.title p:nth-child(2) {
+  margin-left: 210px;
+}
+
+.title p:nth-child(3) {
+  margin-left: 20px;
+}
+
+.title p:nth-child(4) {
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+
+.sectorSecond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+  .sectorSecond p{
+    width: 500px;
+    margin-top: -40px;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .containerWorks {
+    display: flex;
+    justify-content: center;
+
+}
+
+.NumberOfWork {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px; 
+    list-style: none; 
+    padding: 0;
+    margin-top: 70px;
+}
+
+.NumberOfWork a {
+    width: 100px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.NumberOfWork li {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.NumberOfWork li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .cardInner {
+    width: 200px;
+    height: 200px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront,
+  .cardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .cardFront img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cardBack {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+.sectionWorks {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  top: 100px;
+}
+
+.sectionWorks h1 {
+  margin-left: 100px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.leftSide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.leftSside a {
+  margin-top: 20px;
+  color:  rgb(23, 68, 19);
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+
+.rightSide a {
+  margin-top: 20px;
+  color:  rgb(23, 68, 19);
+}
+
+
+.description {
+  padding-bottom: 20px;
+  width: 330px;
+  color: rgb(5, 29, 2);
+  font-size: 22px;
+}
+
+.forwho {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500; 
+  
+}
+
+.tematics {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+.service {
+  font-size: 18px;
+  font-weight: 500; 
+  padding-bottom: 20px;
+  
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    color:  rgb(23, 68, 19);
+      
+}
+
+.options p {
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.projectedDis {
+  margin-top: 20px;
+  color: rgb(23, 92, 12);
+}
+
+.cost {
+  color: rgb(5, 29, 2);
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+
+.Description {
+  height: 78.5vh;
+  background-color: rgb(157, 224, 168);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+}
