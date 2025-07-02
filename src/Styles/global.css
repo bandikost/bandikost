@@ -17,3 +17,12 @@
 .text-low-size {
   @apply text-[0.7rem];
 }
+
+
+.text-ideal-phone {
+  @apply text-[1rem]  leading-tight;
+}
+
+.text-for-sups {
+  @apply text-[0.6rem] ;
+}

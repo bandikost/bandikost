@@ -70,12 +70,12 @@ useLayoutEffect(() => {
                 </div>
         </section>
 
-            <section className="relative w-full h-120 center-flex  bg-gray-900">
+ {/*            <section className="relative w-full h-120 center-flex  bg-gray-900">
 
                 <div className="ml-10"><p className="text-size text-white text-left pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
                     <div className="grid grid-cols-3"></div>
                 </div>
-        </section>
+        </section>*/}
     </>
     );
 };

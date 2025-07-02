@@ -285,13 +285,13 @@ p {
 
 @media (max-width: 1024px) {
   .MainVideo {
-  max-width: 400px;
+  max-width: 450px;
 }
 }
 
 @media (max-width: 880px) {
   .MainVideo {
-  max-width: 310px;
+  max-width: 550px;
 }
 }
 
