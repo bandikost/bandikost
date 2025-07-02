@@ -53,7 +53,7 @@ useLayoutEffect(() => {
                     <MainVideo />
                 </Suspense>
                 
-        <section className="relative w-full h-[500px] sm:h-[500px] center-flex bg-gray-900 md:flex md:justify-end">
+        <section className="relative w-full h-[260px] sm:h-[260px] center-flex bg-gray-900 md:flex md:justify-end">
 
                 <div className="ml-10"><p className="text-lg sm:text-size text-white text-center sm:text-right pb-5 w-full">Используемые технологии: </p> 
                     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-4 ">

@@ -13,7 +13,7 @@ const codeForSPA = [
 export default function MainVideo() {
 
     return (
-         <section className="relative w-full h-120 flex bg-gray-900 justify-center items-center md:justify-start">
+         <section className="relative w-full h-84 flex bg-gray-900 justify-center items-center md:justify-start">
                     <div className="flex flex-col justify-center items-center">
                         <div className="flex">
                           <p className="text-size pb-5 text-white underline text-left ml-5 md:ml-0">Code Review</p>
