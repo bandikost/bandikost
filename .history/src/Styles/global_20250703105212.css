@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center-flex {
+  @apply flex justify-center items-center;
+}
+
+.text-size {
+  @apply  text-xs sm:text-lg md:text-2xl;
+}
+
+.text-size-small-medium {
+  @apply text-sm md:text-lg lg:text-[2rem];
+}
+
+.text-low-size {
+  @apply text-[0.7rem];
+}
+
+.text-to-title {
+  @apply text-[1.375rem] sm:text-[2rem] ;
+}
+
+.text-ideal-phone {
+  @apply text-[1rem]  leading-tight;
+}
+
+.text-for-sups {
+  @apply text-[0.6rem] ;
+}
+
+.TooltipArrow {
+  fill:  #818cf8;
+}
