@@ -8,7 +8,7 @@ export default function MyToolTip({ children, text, className = "w-24" }) {
   // определяем мобильное устройство
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 1024)
+      setIsMobile(window.innerWidth <= 640)
     }
 
     checkMobile()
