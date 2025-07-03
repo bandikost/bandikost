@@ -25,7 +25,7 @@ const films = [
   { id: "24", name: "Фарго",  link: "https://www.imdb.com/title/tt0116282/", rate: "watching now", comment: ``, date: "03.07.2025", categoryId: 4 },
 ];
 
-export const lastUpdated = "2025-07-03T13:11Z"
+export const lastUpdated = "2025-07-02T12:28Z"
 export const lastTitle = "Триллер"
 
 export default films

@@ -56,7 +56,7 @@ export default function Films() {
       ))}
     </ul>
     <ul className="mt-10 md:text-2xl mx-10">
-        <h1 className="center-flex font-bold text-xl md:text-3xl">Избранные:</h1>
+        <h1 className="center-flex font-bold text-xl md:text-3xl">Избранные фильмы:</h1>
       {favorite.map((fav) => (
         <div>
         <li key={fav.id} className="list-decimal m-3 border p-4 rounded-xl font-normal 
