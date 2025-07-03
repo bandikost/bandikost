@@ -1,6 +1,5 @@
 import * as Tooltip from "@radix-ui/react-tooltip"
 import "../../Styles/global.css"
-import { useState } from "react"
 
 export default function MyToolTip({children, text, className = "w-24"}) {
 

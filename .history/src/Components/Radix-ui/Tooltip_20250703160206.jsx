@@ -1,6 +1,5 @@
 import * as Tooltip from "@radix-ui/react-tooltip"
 import "../../Styles/global.css"
-import { useState } from "react"
 
 export default function MyToolTip({children, text, className = "w-24"}) {
 
@@ -13,7 +12,7 @@ export default function MyToolTip({children, text, className = "w-24"}) {
     return (
         <Tooltip.Provider delayDuration={300}>
             <Tooltip.Root>
-                <Tooltip.Trigger asChild onClick={toggleOpen}>
+                <Tooltip.Trigger asChild>
                     {children}
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
