@@ -80,7 +80,7 @@ export default function CategoryFilms() {
 
 
 
-        <div className='mt-10 flex flex-col items-center justify-center mb-20'>
+        <div className='mt-10 flex flex-col items-center justify-center mb-10'>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 px-4">
         {sortedLetters.map(letter => (
           <div key={letter}>
