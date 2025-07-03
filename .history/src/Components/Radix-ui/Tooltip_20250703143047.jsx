@@ -9,7 +9,7 @@ export default function MyToolTip({children, text, className = "w-24"}) {
                     {children}
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className={`text-white bg-indigo-400 text-for-sups sm:text-xs z-10 rounded p-3 ${className}`} sideOffset={10}>
+                    <Tooltip.Content className={`text-white bg-indigo-400 text-for-sups sm:text-xs z-100  rounded p-3 ${className}`} sideOffset={10}>
                         {text}
                         <Tooltip.Arrow className="TooltipArrow"/>
                     </Tooltip.Content>

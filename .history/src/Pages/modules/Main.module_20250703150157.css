@@ -283,6 +283,9 @@ p {
   border-radius: 5px;
 }
 
+.bg_project {
+  background: url("../Images/back.png")
+}
 
 @media (max-width: 1024px) {
   .MainVideo {

@@ -2,7 +2,7 @@ import React, {  useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 
-const VantaBackground = ({children, className="h-[500px]"}) => {
+const VantaBackground = ({children}) => {
   const vantaRef = useRef(null);
   const [vantaEffect, setVantaEffect] = useState(null);
 
@@ -26,7 +26,10 @@ const VantaBackground = ({children, className="h-[500px]"}) => {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className={`${className}`} style={{ width: "100%", position: "relative" }}>
+    <div
+      ref={vantaRef}
+      style={{ width: "100%", height: "500px", position: "relative" }}
+    >
       {children}
     </div>
   );

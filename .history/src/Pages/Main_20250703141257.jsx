@@ -65,13 +65,13 @@ useLayoutEffect(() => {
                 </Suspense>
                 
                    <Suspense fallback={<Preloader />}>
-            <section className="relative w-full h-100 mt-[-100px] sm:mt-[-150px] md:mt-[-100px] flex flex-col justify-end bg-gray-900">
+            <section className="relative w-full h-100 mt-[-100px] sm:mt-[-150px] md:mt-[-50px] flex flex-col justify-end bg-gray-900">
             <div className="container mx-auto px-4 md:flex md:items-end md:flex-col h-full">
-                <p className="font-ubuntu text-ideal-phone sm:text-[2rem] text-white text-center w-82">Проекты, которые я создал: </p> 
+                <p className="font-ubuntu text-to-title text-white  w-82">Проекты, которые я создал: </p> 
                     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {projects.map((proj) => (
-                            <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium"  key={proj.id}>
-                                <p className="border rounded-xl p-5 md:h-40 md:w-40 w-48 h-48 mt-5 mb-1" style={{ backgroundImage: `url(${proj.src})` }}>{proj.name}</p>
+                            <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium" key={proj.id}>
+                                <p className="border rounded-xl p-5 md:h-40 md:w-40 w-48 h-48 mt-5 mb-1">{proj.name}</p>
                                  <NavLink to={`work/${proj.id}`} className="text-low-size text-white">→ <span className="transform duration-100 underline hover:text-indigo-300">Перейти в раздел</span></NavLink>
                             </li>
 
@@ -80,14 +80,14 @@ useLayoutEffect(() => {
                 </div>
         </section>
         </Suspense> 
-        <section className="relative w-full h-100 sm:h-[300px] bg-gray-900 mt-[-100px] lg:mt-0">
+        <section className="relative w-full h-100 sm:h-[300px] bg-gray-900">
         <div className="container mx-auto px-4 md:flex md:justify-start items-center flex justify-center h-full">
                 <div className="ml-5 md:ml-10"><p className="font-ubuntu text-to-title text-white flex items-center justify-center text-center lg:items-start flex-col w-82 pb-5">Используемые технологии: </p> 
                     <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-4 w-48 sm:w-full">
                         {skills.map((skill, i) => (
                             <li key={i}>
                             <img
-                                className={`w-14 h-14 sm:w-20 md:w-20 lg:w-24 xl:w-28 h-12 sm:h-20 md:h-20 lg:h-24 xl:h-28 p-0 border border-gray-900 rounded-lg object-containt ${skill.bg}`}
+                                className={`w-14 h-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 p-0 border border-gray-900 rounded-lg object-containt ${skill.bg}`}
                                 src={skill.src}
                                 alt={`skill-${i}`}
                             />

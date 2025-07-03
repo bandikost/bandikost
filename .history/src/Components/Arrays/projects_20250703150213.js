@@ -1,4 +1,4 @@
-import bg from "../../Images/Main/cards.jpg"
+import bg from "../../Images/back.png"
 
 const projects = [
     {id: 1, name: "Личный сайт, на которм мы сейчас и находимся", src: bg},
