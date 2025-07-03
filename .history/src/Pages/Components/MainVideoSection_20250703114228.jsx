@@ -21,10 +21,10 @@ export default function MainVideo() {
                        <div className="flex flex-col">
                           <p className=" pb-5 text-white text-left ">
                            
-                            <span className="underline text-to-title ml-5 lg:ml-10">Code Review</span>
+                            <span className="underline text-to-title ml-5 lg:ml-10  hover:opacity-50 transform duration-300">Code Review</span>
                         <MyToolTip className="w-56 sm:!w-96" 
-                        text="React-компонент получает из URL параметр категории, берёт данные фильмов и категорий из api, фильтрует фильмы по категории, группирует их по первой букве названия, поддерживает поиск по названию и отображает список фильмов с рейтингами и ссылками." >
-                          <sup className="text-2xl pl-1 text-white cursor-pointer hover:opacity-50 transform duration-300">ⓘ</sup>
+                        text="React-компонент получает из URL параметр категории, берёт данные фильмов и категорий из локальных массивов, фильтрует фильмы по категории, группирует их по первой букве названия, поддерживает поиск по названию и отображает список фильмов с рейтингами и ссылками." >
+                          <sup className="text-2xl pl-1 text-white cursor-pointer">ⓘ</sup>
                         </MyToolTip>
                            </p>
                            <video className={s.MainVideo} src={code} autoPlay loop muted playsInline/>

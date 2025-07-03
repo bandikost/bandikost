@@ -84,7 +84,7 @@ useLayoutEffect(() => {
         <Suspense fallback={<Preloader />}>
             <section className="relative w-full h-120 flex bg-gray-900">
 
-                <div><p className="text-sm text-center flex flex-col items-center justify-center w-64 font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
+                <div><p className="text-sm text-center font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
                     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {projects.map((proj) => (
                             <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium" key={proj.id}>

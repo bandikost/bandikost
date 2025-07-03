@@ -81,22 +81,24 @@ useLayoutEffect(() => {
                 </div>
         </section>
        
-        <Suspense fallback={<Preloader />}>
+
             <section className="relative w-full h-120 flex bg-gray-900">
 
-                <div><p className="text-sm text-center flex flex-col items-center justify-center w-64 font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div className="ml-10"><p className="text-size font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
+                    <ul className="grid grid-cols-3 gap-3">
                         {projects.map((proj) => (
-                            <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium" key={proj.id}>
-                                <p className="border rounded-xl p-5 md:h-40 md:w-40 w-40 h-40 mt-5 mb-1">{proj.name}</p>
-                                 <NavLink to={`work/${proj.id}`} className="text-low-size text-white">→ <span className="transform duration-100 underline hover:text-indigo-300">Перейти в раздел</span></NavLink>
+                            <>
+                            <li className="text-white flex flex-col justify-between list-none  font-ubuntu " key={proj.id}>
+                                <p className="border rounded-xl  p-5 w-48 h-48 mt-5 mb-1">{proj.name}</p>
+                                 <NavLink className="text-ideal-phone sm:text-ideal-phone text-white">Перейти в раздел</NavLink>
                             </li>
                           
+                            </>
                         ))}
+                         
                     </ul>
                 </div>
         </section>
-        </Suspense> 
          <Slasher  /> 
     </>
     );

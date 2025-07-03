@@ -10,7 +10,6 @@ import tailwind from "../Images/settings/tailwind.svg"
 import Preloader from "../Components/Animation/Preloader";
 import Slasher from "../Components/ComponentsSlasher/ComponentSlash";
 import projects from "../Components/Arrays/projects";
-import { NavLink } from "react-router-dom";
 
 const MainVideo = lazy(() => import  ("./Components/MainVideoSection"));
 const VantaBackground= lazy(() => import  ("../Components/Animation/VantaBackground"));
@@ -81,22 +80,17 @@ useLayoutEffect(() => {
                 </div>
         </section>
        
-        <Suspense fallback={<Preloader />}>
-            <section className="relative w-full h-120 flex bg-gray-900">
 
-                <div><p className="text-sm text-center flex flex-col items-center justify-center w-64 font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <section className="relative w-full h-120 center-flex bg-gray-900">
+
+                <div className="ml-10"><p className="text-size text-white text-left pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
+                    <ul className="grid grid-cols-3 gap-3">
                         {projects.map((proj) => (
-                            <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium" key={proj.id}>
-                                <p className="border rounded-xl p-5 md:h-40 md:w-40 w-40 h-40 mt-5 mb-1">{proj.name}</p>
-                                 <NavLink to={`work/${proj.id}`} className="text-low-size text-white">→ <span className="transform duration-100 underline hover:text-indigo-300">Перейти в раздел</span></NavLink>
-                            </li>
-                          
+                            <li className="text-white list-none" key={proj.id}>{proj.name}</li>
                         ))}
                     </ul>
                 </div>
         </section>
-        </Suspense> 
          <Slasher  /> 
     </>
     );
