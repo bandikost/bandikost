@@ -19,7 +19,7 @@ export default function MainVideo() {
                     <div className="flex flex-col justify-center items-center">
                         
                         <div className="flex flex-col lg:flex-row"> 
-                       <div className="flex flex-col">
+                      
                           <p className=" pb-5 text-white text-left ">
                            
                             <span className="underline text-to-title ml-5 lg:ml-10">Code Review</span>
@@ -29,7 +29,7 @@ export default function MainVideo() {
                         </MyToolTip>
                            </p>
                            <video className={s.MainVideo} src={code} autoPlay loop muted playsInline/>
-                    </div>
+                 
                         <div className="ml-0 sm:ml-5">
                             <ul className="font-ubuntu text-to-title text-white flex items-center justify-center text-center lg:items-start flex-col w-82 "><p className="my-5 lg:m-0 md:my-5 sm:my-5">Сайт на React (CRA)</p>
                                 {codeForSPA.map((c) => (

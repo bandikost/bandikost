@@ -84,7 +84,7 @@ useLayoutEffect(() => {
        
         <Suspense fallback={<Preloader />}>
             <section className="relative w-full h-120 flex flex-col justify-end bg-gray-900">
-            <div className="container mx-auto px-4 md:flex md:items-start md:flex-col h-full">
+            <div className="container mx-auto px-4 md:flex  lg:items-start md:justify-start items-center h-full">
                 <p className="font-ubuntu text-to-title text-white  w-82">Проекты, которые я создал: </p> 
                     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {projects.map((proj) => (

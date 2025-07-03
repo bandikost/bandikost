@@ -8,7 +8,7 @@ export default function Layout() {
 
             <Header />
 
-            <main className="flex-grow items-center min-w-screen">
+            <main className="flex-grow items-center max-w-[1200px]">
                 <Outlet />
             </main>
 

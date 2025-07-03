@@ -64,14 +64,14 @@ useLayoutEffect(() => {
                     <MainVideo />
                 </Suspense>
                 
-        <section className="relative w-full h-100 sm:h-[300px] bg-gray-900">
-        <div className="container mx-auto px-4 md:flex md:justify-end items-center flex justify-center h-full">
-                <div className="ml-5 md:ml-10"><p className="font-ubuntu text-to-title text-white flex items-center justify-center text-center lg:items-start flex-col w-82 pb-5">Используемые технологии: </p> 
-                    <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-4 w-48 sm:w-full">
+        <section className="relative w-full h-[380px] sm:h-[300px] bg-gray-900">
+        <div className="container mx-auto px-4 md:flex md:justify-end items-center h-full">
+                <div className="ml-5 md:ml-10"><p className="font-ubuntu text-lg sm:text-size text-white text-center sm:text-right pb-5 w-full">Используемые технологии: </p> 
+                    <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-4 w-72 sm:w-full">
                         {skills.map((skill, i) => (
                             <li key={i}>
                             <img
-                                className={`w-14 h-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 p-0 border border-gray-900 rounded-lg object-containt ${skill.bg}`}
+                                className={`w-16 h-16 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 p-0 border border-gray-900 rounded-lg object-containt ${skill.bg}`}
                                 src={skill.src}
                                 alt={`skill-${i}`}
                             />
@@ -83,18 +83,19 @@ useLayoutEffect(() => {
         </section>
        
         <Suspense fallback={<Preloader />}>
-            <section className="relative w-full h-120 flex flex-col justify-end bg-gray-900">
-            <div className="container mx-auto px-4 md:flex md:items-start md:flex-col h-full">
-                <p className="font-ubuntu text-to-title text-white  w-82">Проекты, которые я создал: </p> 
+            <section className="relative w-full h-120 flex bg-gray-900">
+            <div className="container mx-auto px-4 md:flex md:justify-start items-center h-full">
+                <div><p className="text-sm text-center flex flex-col items-center justify-center w-64 font-ubuntu text-white pb-5">Проекты фриланса и для компаний, в которых я работал: </p> 
                     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                         {projects.map((proj) => (
                             <li className="text-white flex flex-col items-center justify-between list-none  font-ubuntu text-ideal-phone sm:text-sm md:text-size-small-medium" key={proj.id}>
                                 <p className="border rounded-xl p-5 md:h-40 md:w-40 w-40 h-40 mt-5 mb-1">{proj.name}</p>
                                  <NavLink to={`work/${proj.id}`} className="text-low-size text-white">→ <span className="transform duration-100 underline hover:text-indigo-300">Перейти в раздел</span></NavLink>
                             </li>
-
+                          
                         ))}
                     </ul>
+                </div>
                 </div>
         </section>
         </Suspense> 
