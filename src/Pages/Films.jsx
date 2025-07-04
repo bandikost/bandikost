@@ -74,3 +74,69 @@ export default function Films() {
     
     )
 }
+
+
+{/* import { NavLink } from "react-router-dom"
+import films from "../Components/Arrays/films"
+import filmsLater from "../Components/Arrays/filmsLater";
+import MyToast from "../Components/Radix-ui/Toast";
+import favorite from "../Components/Arrays/favorite";
+import Navcategory from "./Components/Navcategory";
+import { useState } from "react";
+
+
+export default function Films() {
+ const [showSelected, setShowSelected] = useState(false)
+
+    const deferredFilms = filmsLater
+    .filter(film => film.name.trim() !== "")
+    .slice(0, 4);
+
+    const showFilms = deferredFilms.length 
+    
+    const recentFilms = films.slice(-3);
+
+
+    return (
+
+    <div className="m-0 flex flex-col items-center bg-cover bg-center mt-20" >
+
+        <Navcategory showSelected={showSelected} setShowSelected={setShowSelected} />
+     <h1 className="font-bold text-xl md:text-3xl flex justify-center items-center mt-10"> {showSelected ? `${showFilms}  ${showFilms < 2 ? "фильм отложен" : "фильма отложенных"}: ` : '3 последних фильма: '} </h1>
+
+      <div className="flex-col sm:flex-row">
+        <ul className="mt-10 md:text-2xl mx-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+     
+          {(showSelected ? deferredFilms : recentFilms).map((film) => (
+            <li key={film.id} className="list-none m-3 h-56 w-48 font-normal border border-gray-900 rounded-xl shadow-[5px_5px_10px_rgba(0,0,0,0.2)] bg-white 
+              text-center  hover:bg-indigo-100 transition-colors duration-300 cursor-pointer">    
+                
+                <img src={film.image} className="w-full border blur-[1px] rounded-xl h-full object-cover" alt="" />
+                <NavLink className="text-sm" to={`/category/${film.categoryId}`}>{film.name}</NavLink>
+            </li>
+          ))}
+
+        </ul>
+ 
+    <ul className="mt-10 md:text-2xl mx-10">
+        <h1 className="center-flex font-bold text-xl md:text-3xl">Избранные:</h1>
+      {favorite.map((fav) => (
+        <div>
+        <li key={fav.id} className="list-decimal m-3 border p-4 rounded-xl font-normal 
+          shadow-[5px_5px_10px_rgba(0,0,0,0.2)] text-center bg-white space-y-2 text-size-small-medium hover:bg-indigo-100 transition-colors duration-300 cursor-pointer">
+            {fav.name}
+          </li>
+        </div>
+      ))}
+    </ul>
+
+        </div>
+
+
+      <MyToast />
+
+
+    </div>
+    
+    )
+}*/}
