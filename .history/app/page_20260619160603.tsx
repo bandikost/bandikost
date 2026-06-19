@@ -22,9 +22,9 @@ export default async function Home() {
   const lang = (cookieStore.get("lang")?.value ?? "en") as Language
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-900 ">
+    <main className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-900 mt-10">
 
-      <section className="min-h-[70vh] flex flex-col justify-center items-center text-center gap-6 px-4 mt-10">
+      <section className="min-h-[70vh] flex flex-col justify-center items-center text-center gap-6 px-4">
         <h1 className="text-5xl md:text-6xl !font-semibold tracking-tight">
           Bandikost
         </h1>
