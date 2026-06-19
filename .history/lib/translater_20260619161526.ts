@@ -112,7 +112,7 @@ export const translations = {
 
     project1: {
       title: "Une plateforme de formation pour les médecins 👨‍⚕️",
-      desc: "Une plateforme à part entière avec un apprentissage virtuel en mode jeu, des comptes personnels avec accès payant, une zone d'administration mondiale et bien plus encore",
+      desc: "Marketplace complet avec paiements et panneau admin",
     },
     about: {
     p1: "J'ai commencé en autodidacte en créant de petites applications React et des composants UI.",

@@ -68,11 +68,11 @@ export default async function Home() {
         </h2>
 
         <div className="rounded-2xl border border-gray-200 shadow-md bg-white/70 backdrop-blur p-6 hover:-translate-y-1 transition">
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-2 w-full">
             <h3 className="!font-base">
               {translations[lang].experience1.company}
             </h3>
-            <span className="!font-base text-md text-zinc-500 my-3 sm:mt-0">
+            <span className="!font-base text-md text-zinc-500">
               {translations[lang].experience1.period}
             </span>
           </div>

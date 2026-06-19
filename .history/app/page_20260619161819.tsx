@@ -72,7 +72,7 @@ export default async function Home() {
             <h3 className="!font-base">
               {translations[lang].experience1.company}
             </h3>
-            <span className="!font-base text-md text-zinc-500 my-3 sm:mt-0">
+            <span className="!font-base text-md text-zinc-500 mt-4 sm:mt-0">
               {translations[lang].experience1.period}
             </span>
           </div>

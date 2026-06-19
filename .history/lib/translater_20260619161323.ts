@@ -29,8 +29,8 @@ export const translations = {
     },
 
     project1: {
-      title: "Обучающая платформа для врачей 👨‍⚕️",
-      desc: "Полноценная платформа с виртуальным обучением в режиме игры, личные кабинеты с платными доступами, общирной админкой и многое другое",
+      title: "Обучающая платформа для врачей 🛒",
+      desc: "Полноценный маркетплейс с оплатой, корзиной и админкой",
     },
 
     about: {
@@ -70,8 +70,8 @@ export const translations = {
     },
 
     project1: {
-      title: "A training platform for doctors 👨‍⚕️",
-      desc: "A full-fledged platform with virtual learning in game mode, personal accounts with paid access, a worldwide admin area and much more",
+      title: "E-commerce Platform 🛒",
+      desc: "Full-featured marketplace with payments, cart and admin panel",
     },
 
     about: {
@@ -111,8 +111,8 @@ export const translations = {
     },
 
     project1: {
-      title: "Une plateforme de formation pour les médecins 👨‍⚕️",
-      desc: "Une plateforme à part entière avec un apprentissage virtuel en mode jeu, des comptes personnels avec accès payant, une zone d'administration mondiale et bien plus encore",
+      title: "Plateforme E-commerce 🛒",
+      desc: "Marketplace complet avec paiements et panneau admin",
     },
     about: {
     p1: "J'ai commencé en autodidacte en créant de petites applications React et des composants UI.",

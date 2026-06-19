@@ -67,12 +67,12 @@ export default async function Home() {
           {translations[lang].experienceTitle}
         </h2>
 
-        <div className="rounded-2xl border border-gray-200 shadow-md bg-white/70 backdrop-blur p-6 hover:-translate-y-1 transition">
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="rounded-2xl border bg-white/70 backdrop-blur p-6 hover:-translate-y-1 transition">
+          <div className="flex justify-between">
             <h3 className="!font-base">
               {translations[lang].experience1.company}
             </h3>
-            <span className="!font-base text-md text-zinc-500 my-3 sm:mt-0">
+            <span className="!font-base text-md text-zinc-500">
               {translations[lang].experience1.period}
             </span>
           </div>
@@ -92,7 +92,7 @@ export default async function Home() {
       </FadeIn>
       
 <FadeIn>
-      <section className="max-w-5xl mx-auto px-2 py-10">
+      <section className="max-w-6xl mx-auto px-4 py-10">
         <h2 className="text-2xl !font-base mb-6 text-center sm:text-left">
           {translations[lang].skillsTitle}
         </h2>
@@ -106,13 +106,13 @@ export default async function Home() {
 </FadeIn>
     <FadeIn>
       <section className="max-w-5xl mx-auto px-4 py-10">
-        <h2 className="text-2xl !font-base text-center sm:text-left mb-6">
+        <h2 className="text-2xl !font-base  mb-6">
           {translations[lang].projectsTitle}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4">
 
-          <div className="rounded-2xl border border-gray-200 bg-white/70 p-6 hover:-translate-y-1 transition shadow-md">
+          <div className="rounded-2xl border bg-white/70 p-6 hover:-translate-y-1 transition">
             <h3 className="text-lg !font-base">
               {translations[lang].project1.title}
             </h3>
