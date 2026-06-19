@@ -25,7 +25,7 @@ export default async function Home() {
     <main className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-900 ">
 
       <section className="min-h-[80vh] flex flex-col justify-center items-center text-center gap-6 px-4 ">
-        <h1 className="text-5xl md:text-6xl !font-semibold tracking-tight">
+        <h1 className="text-5xl md:text-6xl !font-semibold tracking-tight mt-10">
           Bandikost {translations[lang].portfolio}
         </h1>
 
