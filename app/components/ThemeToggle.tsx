@@ -36,14 +36,11 @@ export default function ThemeToggle({ lang }: Props) {
     setTheme(nextTheme);
   }
 
-  const text =
-    theme === "dark"
-      ? translations[lang].lightTheme
-      : translations[lang].darkTheme;
+  const text = theme === "dark" ? translations[lang].lightTheme : translations[lang].darkTheme;
 
   return (
-    <button onClick={toggleTheme} type="button" className="cursor-pointer hover:opacity-50 !text-zinc-900">
-      {theme === "dark" ? "☀️" : "🌙"} {text}
+    <button onClick={toggleTheme} type="button" className="cursor-pointer hover:opacity-50 flex gap-1">
+      {theme === "dark" ? "☀️" : "🌙"} <span className="hidden sm:!flex">{text}</span>
     </button>
   );
 }
