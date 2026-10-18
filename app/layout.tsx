@@ -26,11 +26,14 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-   const cookieStore = await cookies();
-  const lang = cookieStore.get("lang")?.value ?? "en";
+    const cookieStore = await cookies();
+    const lang = cookieStore.get("lang")?.value ?? "en";
+    const theme = cookieStore.get("theme")?.value === "dark"
+      ? "dark"
+      : "light"
   return (
     <html lang={lang} className={`${quicksand.variable}`}>
-      <body>
+      <body data-theme={theme}>
         <LanguageProvider>
           <Header />
           {children}

@@ -12,9 +12,16 @@ export const translations = {
 
     aboutme: "Обо мне",
 
-    skillsTitle: "Навыки",
+     skillsTitle: {
+        section: "Навыки",
+        tech: "Технический стак",
+        beyond: "И прочее",
+        learn: "Постоянно изучаю новое и совершенствую свои навыки."
+    },
 
     projectsTitle: "Проекты",
+    lightTheme: "Светлая тема",
+darkTheme: "Тёмная тема",
 
     experience1: {
       company: `ЧОУ ДПО "Академия медицинского образования им.Ф.И.Иноземцева"`,
@@ -34,9 +41,7 @@ export const translations = {
     },
 
     about: {
-      p1: "Я начал как самоучка, создавая небольшие React-приложения и UI-компоненты.",
-      p2: "За последние 3 года я сфокусировался на создании масштабируемых frontend систем на Next.js и TypeScript.",
-      p3: "Мне важно производительность, UX детали и чистая архитектура.",
+      text: "Я фронтенд-разработчик.В основном работаю с React, Next.js, TypeScript и JavaScript. Я работаю самостоятельно, при необходимости изучаю новые технологии и погружаюсь в незнакомые кодовые базы, а не избегаю их. Я ищу команду, в которой смогу расти как разработчик, брать на себя ответственность за важные части продукта и работать с людьми, которым небезразлично то, что они создают. Мне также комфортно работать в команде. Кстати, я уже полностью взял на себя руководство крупным проектом и довел его от стадии разработки до запуска (подробнее об этом можно прочитать в разделе «Мой опыт»). Я ценю любознательность, самостоятельность и стремление постоянно совершенствоваться.В настоящее время открыт для переезда и работы в Европе.",
     }
   },
 
@@ -53,9 +58,16 @@ export const translations = {
 
     aboutme: "About me",
 
-    skillsTitle: "Skills",
+     skillsTitle: {
+        section: "Skills",
+        tech: "Tech Stack",
+        beyond: "Beyond",
+        learn: "I constantly learn new things and improve my skills."
+    },
 
     projectsTitle: "Projects",
+    lightTheme: "Light theme",
+darkTheme: "Dark theme",
 
     experience1: {
       company: `CHOU DPO "F.I.Inozemtsev Academy of Medical Education"`,
@@ -75,9 +87,7 @@ export const translations = {
     },
 
     about: {
-      p1: "I started as a self-taught developer, building small React apps and UI components.",
-      p2: "Over the last 3 years I focused on building scalable frontend systems using Next.js, TypeScript and modern UI architecture.",
-      p3: "I care about performance, UX details and clean architecture.",
+      text: "I'm a frontend developer. I work mainly with React, Next.js, TypeScript, and JavaScript. I'm  working independently, learning new technologies when needed, and diving into unfamiliar codebases rather than avoiding them. I'm looking for a team where I can grow as an developer, take ownership of meaningful parts of a product, and work alongside people who care about what they build. I'm also comfortable working with teams btw I've already taken full ownership of a large project and brought it from development to production (You can read more about it in my experience section). I value curiosity, independence, and the willingness to keep improving. Currently open to relocation and international opportunities in Europe.",
     }
   },
 
@@ -94,9 +104,16 @@ export const translations = {
 
     aboutme: "À propos de moi",
 
-    skillsTitle: "Compétences",
+    skillsTitle: {
+        section: "Compétences",
+        tech: "Pile technologique",
+        beyond: "Au-delà",
+        learn: "J'apprends constamment de nouvelles choses et améliore mes compétences."
+    },
 
     projectsTitle: "Projets",
+    lightTheme: "Thème clair",
+darkTheme: "Thème sombre",
 
     experience1: {
       company: `CHOW DPO Academy of Medical Education.F. I. Inozemtseva"`,
@@ -115,10 +132,8 @@ export const translations = {
       desc: "Une plateforme à part entière avec un apprentissage virtuel en mode jeu, des comptes personnels avec accès payant, une zone d'administration mondiale et bien plus encore",
     },
     about: {
-    p1: "J'ai commencé en autodidacte en créant de petites applications React et des composants UI.",
-    p2: "Au cours des 3 dernières années, je me suis concentré sur des systèmes frontend scalables avec Next.js et TypeScript.",
-    p3: "Je fais attention aux performances, à l'UX et à une architecture propre.",
-  }
+      text: "Je suis un développeur frontend. Je travaille principalement avec React, Next.js, dactylographié et JavaScript. Je travaille de manière indépendante, j'apprends de nouvelles technologies en cas de besoin et je plonge dans des bases de code inconnues plutôt que de les éviter. Je suis à la recherche d'une équipe où je peux évoluer en tant que développeur, m'approprier des parties significatives d'un produit et travailler aux côtés de personnes soucieuses de ce qu'elles construisent. Je suis également à l'aise de travailler avec des équipes d'ailleurs, j'ai déjà pris la pleine propriété d'un grand projet et l'ai fait passer du développement à la production (Vous pouvez en savoir plus à ce sujet dans ma section expérience). J'apprécie la curiosité, l'indépendance et la volonté de continuer à m'améliorer. Actuellement ouvert à la délocalisation et aux opportunités internationales en Europe.",
+    }
   },
 
   

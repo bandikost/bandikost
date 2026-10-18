@@ -25,8 +25,41 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-quicksand), system-ui, sans-serif;
- font-weight: 400;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+body[data-theme="dark"] {
+  --background: #1d1f1d;
+  --foreground: #f0f3f0;
+  --surface: #151916;
+  --border: #29312b;
+  --accent: #8cff62;
+  --skill-border: rgba(255, 255, 255, 0.1);
+  --skill-bg: rgba(255, 255, 255, 0.03);
+  --grid-color: rgba(160, 180, 160, 0.09);
+}
+
+body[data-theme="light"] {
+  --background: #f5f7f4;
+  --foreground: #171b18;
+  --surface: #ffffff;
+  --border: #dce3dc;
+  --accent: #398b25;
+   --skill-border: rgba(0, 0, 0, 0.12);
+  --skill-bg: rgba(0, 0, 0, 0.02);
+  --grid-color: rgba(30, 50, 30, 0.09);
+}
+
+.card {
+  background: var(--surface);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+}
+
+.button {
+  background: var(--accent);
 }
 
 h1, h2, h3 {
@@ -43,4 +76,31 @@ h1, h2, h3 {
 
 :lang(fr) {
   font-family: var(--font-quicksand), system-ui;
+}
+
+.site-grid {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      to right,
+      var(--grid-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--grid-color) 1px,
+      transparent 1px
+    );
+
+  background-size: 80px 80px;
 }

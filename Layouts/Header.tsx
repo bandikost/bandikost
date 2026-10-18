@@ -1,9 +1,10 @@
 "use client";
 
+import ThemeToggle from "@/app/components/ThemeToggle";
+import { Language } from "@/types/Language";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-type Language = "ru" | "en" | "fr"
 
 export default function Header() {
   const router = useRouter()
@@ -41,6 +42,7 @@ export default function Header() {
         </h1>
 
         <div className="flex items-center gap-2 rounded-xl bg-zinc-100 p-1">
+          <ThemeToggle lang={lang} />
           {languages.map(({ code, label }) => (
             <button
               key={code}
